@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Drizzle_Prj</string>
+    <string name="drizzle">DRIZZLE</string> // splash 화면  Drizzle 뽑기
 </resources>
