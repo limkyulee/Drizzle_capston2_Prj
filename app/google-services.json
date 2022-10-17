@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "813585706012",
+    "project_id": "drizzle-prj",
+    "storage_bucket": "drizzle-prj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813585706012:android:35782a274af248db1fc3d9",
+        "android_client_info": {
+          "package_name": "com.example.drizzle_prj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813585706012-7ca2ivllrqultgd83keskcvaqbfpa7jq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.drizzle_prj",
+            "certificate_hash": "f7dd5a51bddc989749ae46528e8a503543353542"
+          }
+        },
+        {
+          "client_id": "813585706012-dbi6j1qp5d4no7e6eobsl7lmj6rici8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4q7oKELbVWetS3el3b2j2aUP-9i6TDQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813585706012-dbi6j1qp5d4no7e6eobsl7lmj6rici8g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
