@@ -5,4 +5,15 @@
         <item name="android:letterSpacing">-0.01</item>
         <item name="android:textColor">#FFFFFF</item>
     </style>
+    <style name="drizzle_1">
+        <item name="android:textSize">55sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#0EAA56</item>
+    </style>
+    <style name="login_id">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#373737</item>
+    </style>
+
+
 </resources>

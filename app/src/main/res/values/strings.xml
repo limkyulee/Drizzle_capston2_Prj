@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Drizzle_Prj</string>
-    <string name="drizzle">DRIZZLE</string> // splash 화면  Drizzle 뽑기
+    <string name="drizzle">DRIZZLE</string>
+    // splash 화면 Drizzle 뽑기
+
+    //로그인 화면
+    <string name="drizzle_1">DRIZZLE</string>
+    <string name="login_id">아이디를 입력해주세요</string>
+    <string name="login_pw">비밀번호를 입력해주세요</string>
 </resources>

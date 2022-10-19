@@ -17,15 +17,20 @@
 
     <TextView
         android:id="@+id/drizzle"
-        android:layout_width="234dp"
+        android:layout_width="238dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="88dp"
-        android:layout_marginTop="310dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="91dp"
         android:gravity="center_horizontal|top"
         android:text="@string/drizzle"
-        android:textAppearance="@style/drizzle" />
+        android:textAppearance="@style/drizzle"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
 </RelativeLayout>
-
-
