@@ -4,6 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
+import com.example.drizzle_prj.api.DrizzleApi
+import kotlinx.coroutines.runBlocking
+
 
 // splash 화면 동작
 class SplashActivity : AppCompatActivity() {
@@ -12,6 +16,17 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
         loadSplashScreen()
+        /*
+        runBlocking {
+            try{
+                val response = DrizzleApi.instance.hello()
+                Log.d("MainActivity",response.data)
+            } catch (e:Exception){
+                Log.e("MainActivity", "Hello API 호출 오류", e)
+            }
+        }
+
+         */
     }
 
     private fun loadSplashScreen(){
