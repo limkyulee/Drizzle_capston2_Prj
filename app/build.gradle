@@ -43,6 +43,7 @@ dependencies {
         arch_version='2.2.0-alpha01'
         retrofit_version='2.6.0'
         okhttp_version='3.8.0'
+        splitties_version='3.0.0'
     }
 
     implementation "androidx.lifecycle:lifecycle-extensions:$arch_version"
@@ -69,4 +70,7 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
     implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+
+    implementation "com.louiscad.splitties:splitties-toast:$splitties_version"
+
 }

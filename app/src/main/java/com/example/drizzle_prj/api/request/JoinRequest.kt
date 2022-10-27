@@ -7,7 +7,7 @@ class JoinRequest(val email:String?,
                     val name: String?) {
     //각각의 필드값을 검증하는 함수 포함
     //안드 SDK에 Patterns 유틸리티에 이메일 검증을 도와주는 EMAIL_ADDRESS 정규표현식 사용
-    fun inNotValidEmail()=
+    fun isNotValidEmail()=
         email.isNullOrBlank()
                 || !Patterns.EMAIL_ADDRESS.matcher(email).matches()
 
