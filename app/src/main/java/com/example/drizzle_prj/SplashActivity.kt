@@ -17,6 +17,7 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
         loadSplashScreen()
         /*
+        //Hello api test용
         runBlocking {
             try{
                 val response = DrizzleApi.instance.hello()
@@ -25,7 +26,6 @@ class SplashActivity : AppCompatActivity() {
                 Log.e("MainActivity", "Hello API 호출 오류", e)
             }
         }
-
          */
     }
 

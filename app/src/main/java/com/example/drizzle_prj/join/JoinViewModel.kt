@@ -3,6 +3,7 @@ package com.example.drizzle_prj.join
 import android.app.Application
 import android.graphics.Paint
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.drizzle_prj.api.DrizzleApi
 import com.example.drizzle_prj.api.request.JoinRequest
@@ -14,7 +15,7 @@ import java.lang.Exception
 import splitties.toast.*
 import android.util.Log
 
-class JoinViewModel(app:Application) {
+public class JoinViewModel(app:Application){
 
     val email = MutableLiveData("")
     val name= MutableLiveData("")
@@ -64,5 +65,8 @@ class JoinViewModel(app:Application) {
         }else{
             toast(response.message ?:"알 수 없는 오류가 발생했습니다.")
         }
+    }
+
+    fun btnClick(){
     }
 }

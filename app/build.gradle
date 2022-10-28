@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-parcelize'
     id 'com.google.gms.google-services'
+
 }
 
 android {
@@ -26,7 +27,7 @@ android {
     }
     buildFeatures {
         dataBinding = true
-        viewBinding = true
+        viewBinding true
     }
 
     compileOptions {
@@ -44,8 +45,9 @@ dependencies {
         retrofit_version='2.6.0'
         okhttp_version='3.8.0'
         splitties_version='3.0.0'
-    }
 
+    }
+    // Lifecycle components
     implementation "androidx.lifecycle:lifecycle-extensions:$arch_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$arch_version"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$arch_version"
@@ -72,5 +74,7 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
 
     implementation "com.louiscad.splitties:splitties-toast:$splitties_version"
+
+
 
 }
