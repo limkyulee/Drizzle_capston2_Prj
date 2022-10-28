@@ -6,19 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainNaviActivity">
 
-<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
-<!--        android:id="@+id/bottomNavigation"-->
-<!--        android:layout_width="413dp"-->
-<!--        android:layout_height="62dp"-->
-<!--        app:itemIconTint="@drawable/selector_bottom_navigation_menu_color"-->
-<!--        app:itemRippleColor="@null"-->
-<!--        app:itemTextColor="@color/gray"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="1.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:menu="@menu/navi_menu" />-->
-
     <FrameLayout android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/fl_container"

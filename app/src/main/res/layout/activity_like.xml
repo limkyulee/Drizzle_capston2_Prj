@@ -41,129 +41,138 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
-                android:layout_marginTop="80dp"
-                android:layout_marginLeft="17dp"
-                app:srcCompat="@drawable/like_image_01" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="22dp"
-                android:layout_marginTop="10dp"
-                android:text="지구샵"
-                android:textStyle="bold"
-                android:textColor="#373737"
-                android:textSize="13dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="22dp"
-                android:layout_marginTop="2dp"
-                android:text="올인원 비건 샴푸볼"
-                android:textColor="#373737"
-                android:textSize="13dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="22dp"
-                android:layout_marginTop="2dp"
-                android:text="19,200"
-                android:textColor="#373737"
-                android:textStyle="bold"
-                android:textSize="13dp" />
-        </LinearLayout>
+                    <ImageView
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="80dp"
+                        app:srcCompat="@drawable/like_image_01" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="10dp"
+                        android:text="지구샵"
+                        android:textColor="#373737"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
-                android:layout_marginTop="80dp"
-                android:layout_marginLeft="15dp"
-                app:srcCompat="@drawable/like_image_02" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="19dp"
-                android:layout_marginTop="10dp"
-                android:text="톤28"
-                android:textStyle="bold"
-                android:textColor="#373737"
-                android:textSize="13dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="19dp"
-                android:layout_marginTop="2dp"
-                android:text="바오밥나무 샴푸바"
-                android:textColor="#373737"
-                android:textSize="13dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="19dp"
-                android:layout_marginTop="2dp"
-                android:text="9,900"
-                android:textColor="#373737"
-                android:textStyle="bold"
-                android:textSize="13dp" />
-        </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="2dp"
+                        android:text="올인원 비건 샴푸볼"
+                        android:textColor="#373737"
+                        android:textSize="13dp" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="2dp"
+                        android:text="19,200"
+                        android:textColor="#373737"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
 
-            <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
-                android:layout_marginTop="80dp"
-                android:layout_marginLeft="15dp"
-                app:srcCompat="@drawable/like_image_03" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="19dp"
-                android:layout_marginTop="10dp"
-                android:text="지구샵"
-                android:textStyle="bold"
-                android:textColor="#373737"
-                android:textSize="13dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="19dp"
-                android:layout_marginTop="2dp"
-                android:text="[소락]면 화장솜 40.."
-                android:textColor="#373737"
-                android:textSize="13dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="19dp"
-                android:layout_marginTop="2dp"
-                android:text="19,200"
-                android:textColor="#373737"
-                android:textStyle="bold"
-                android:textSize="13dp" />
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-    </LinearLayout>
+                    <ImageView
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="80dp"
+                        app:srcCompat="@drawable/like_image_02" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="10dp"
+                        android:text="톤28"
+                        android:textColor="#373737"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="2dp"
+                        android:text="바오밥나무 샴푸바"
+                        android:textColor="#373737"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="2dp"
+                        android:text="9,900"
+                        android:textColor="#373737"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="80dp"
+                        app:srcCompat="@drawable/like_image_03" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="10dp"
+                        android:text="지구샵"
+                        android:textColor="#373737"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="2dp"
+                        android:text="[소락]면 화장솜 40.."
+                        android:textColor="#373737"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="2dp"
+                        android:text="19,200"
+                        android:textColor="#373737"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
