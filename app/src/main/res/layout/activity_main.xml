@@ -1,20 +1,336 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/MainActivity"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clipToOutline="true"
+        android:background="@drawable/login_id">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:src="@drawable/logo_icon_small"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/main_promotion_image_1" />
+    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-<!--    @menu/navi_menu-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="230dp"
+            android:text="환경을 위한 첫걸음\n샴푸바 모음"
+            android:textColor="@color/white"
+            android:textSize="27dp"
+            android:textStyle="bold"
+            android:lineSpacingExtra ="-4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:text="최대 30% 할인에\n무료배송까지"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:lineSpacingExtra ="-4dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/main_shampoo_button"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="21.5dp"
+            android:layout_marginRight="5.5dp"
+            android:layout_marginTop="397dp"
+            app:srcCompat="@drawable/shampoo_icon" />
+
+        <ImageButton
+            android:id="@+id/main_bath_button"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="397dp"
+            android:layout_marginLeft="5.5dp"
+            android:layout_marginRight="5.5dp"
+            app:srcCompat="@drawable/bath_icon" />
+
+        <ImageButton
+            android:id="@+id/main_chopstick_button"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="397dp"
+            android:layout_marginLeft="5.5dp"
+            android:layout_marginRight="5.5dp"
+            app:srcCompat="@drawable/chopstick_icon" />
+
+        <ImageButton
+            android:id="@+id/main_kitchen_button"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="397dp"
+            android:layout_marginLeft="5.5dp"
+            android:layout_marginRight="5.5dp"
+            app:srcCompat="@drawable/kitchen_icon" />
+
+        <ImageButton
+            android:id="@+id/main_note_button"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="397dp"
+            android:layout_marginLeft="5.5dp"
+            app:srcCompat="@drawable/note_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="41.5dp"
+            android:layout_marginTop="467dp"
+            android:text="세정"
+            android:textColor="#373737"
+            android:textStyle="bold"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="467dp"
+            android:layout_marginLeft="53dp"
+            android:text="욕실"
+            android:textColor="#373737"
+            android:textStyle="bold"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="467dp"
+            android:layout_marginLeft="52.5dp"
+            android:text="생활"
+            android:textColor="#373737"
+            android:textStyle="bold"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="467dp"
+            android:layout_marginLeft="52.5dp"
+            android:text="주방"
+            android:textColor="#373737"
+            android:textStyle="bold"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="467dp"
+            android:layout_marginLeft="52.5dp"
+            android:text="문구"
+            android:textColor="#373737"
+            android:textStyle="bold"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <View
+        android:layout_width="414dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="499dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#F8F8F8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="25dp"
+            android:text="김한양님을 위한 추천 아이템"
+            android:textColor="#373737"
+            android:textStyle="bold"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="560dp"
+            android:src="@drawable/main_image_01" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="28dp"
+                android:text="힐어스"
+                android:textColor="#373737"
+                android:textStyle="bold"
+                android:textSize="13dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.8dp"
+                android:layout_marginLeft="28dp"
+                android:text="친환경 대나무 칫솔\n990원"
+                android:textColor="#373737"
+                android:textSize="11dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="560dp"
+                android:src="@drawable/main_image_02" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="18dp"
+                android:text="PLA"
+                android:textColor="#373737"
+                android:textStyle="bold"
+                android:textSize="13dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.8dp"
+                android:layout_marginLeft="18dp"
+                android:text="옥수수 빨대 2000개\n55,000원"
+                android:textColor="#373737"
+                android:textSize="11dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="560dp"
+                android:src="@drawable/main_image_03" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="18dp"
+                android:text="사옹원"
+                android:textColor="#373737"
+                android:textStyle="bold"
+                android:textSize="13dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.8dp"
+                android:layout_marginLeft="18dp"
+                android:text="친환경 그릇\n22,000원"
+                android:textColor="#373737"
+                android:textSize="11dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="560dp"
+                android:src="@drawable/main_image_02" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="18dp"
+                android:text="사옹원"
+                android:textColor="#373737"
+                android:textStyle="bold"
+                android:textSize="13dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.8dp"
+                android:layout_marginLeft="18dp"
+                android:text="친환경 그릇\n22,000원"
+                android:textColor="#373737"
+                android:textSize="11dp" />
+        </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>
