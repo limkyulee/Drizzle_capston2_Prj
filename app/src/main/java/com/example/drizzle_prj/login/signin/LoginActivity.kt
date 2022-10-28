@@ -1,21 +1,21 @@
-package com.example.drizzle_prj.join
-
+package com.example.drizzle_prj.login.signin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.drizzle_prj.R
 import com.example.drizzle_prj.databinding.ActivityJoinBinding
-import androidx.databinding.DataBindingUtil
 
+class LoginActivity : AppCompatActivity() {
 
-class JoinActivity : AppCompatActivity() {
+    //override val viewModelType = SinginViewModel::class
+
     private lateinit var binding: ActivityJoinBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_join)
-        binding = DataBindingUtil.setContentView(this,R.layout.activity_join)
 
     }
+
+
+
 
 }

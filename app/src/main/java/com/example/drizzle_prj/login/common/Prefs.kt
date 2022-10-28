@@ -1,7 +1,7 @@
-package com.example.drizzle_prj.LOGIN0.common
+package com.example.drizzle_prj.login.common
 
 import android.preference.PreferenceManager
-import com.example.drizzle_prj.LOGIN0.App
+import com.example.drizzle_prj.login.App
 
 object Prefs {
 

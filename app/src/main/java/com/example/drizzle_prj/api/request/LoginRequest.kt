@@ -1,8 +1,8 @@
-package com.example.drizzle_prj.LOGIN0.api.request
+package com.example.drizzle_prj.api.request
 
 import android.util.Patterns
 
-class SigninRequest (
+class LoginRequest (
 
     val email: String?,
     val password: String?

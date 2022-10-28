@@ -1,4 +1,4 @@
-package com.example.drizzle_prj.LOGIN0
+package com.example.drizzle_prj.login
 
 import android.app.Application
 
