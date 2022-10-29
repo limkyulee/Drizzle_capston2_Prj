@@ -1,24 +1,23 @@
-package com.example.drizzle_prj.LOGIN0.signin
+package com.example.drizzle_prj.login.signin
 
 import android.app.Application
-import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
-import com.example.drizzle_prj.LOGIN0.api.DrizzleApi
-import com.example.drizzle_prj.LOGIN0.api.request.SigninRequest
-import com.example.drizzle_prj.LOGIN0.api.response.ApiResponse
-import com.example.drizzle_prj.LOGIN0.api.response.SigninResponse
-import com.example.drizzle_prj.LOGIN0.common.Prefs
-import net.codephobia.ankomvvm.lifecycle.BaseViewModel
-//import org.jetbrains.anko.error
+import com.example.drizzle_prj.api.DrizzleApi
+import com.example.drizzle_prj.api.request.LoginRequest
+import com.example.drizzle_prj.api.response.ApiResponse
+import com.example.drizzle_prj.api.response.LoginResponse
+import com.example.drizzle_prj.login.common.Prefs
+import kotlinx.coroutines.withContext
+import kotlinx.coroutines.Dispatchers
 
-class SinginViewModel(app: Application) : BaseViewModel(app){
+class LoginViewModel(app: Application) {
 
     //1
     val email = MutableLiveData("")
     val password = MutableLiveData("")
 
-    suspend fun signin() {
-        val request = SigninRequest(email.value, password.value)
+    suspend fun login() {
+        val request = LoginRequest(email.value, password.value)
         if(isNotVaildSignin(request))
             return
 
@@ -26,12 +25,12 @@ class SinginViewModel(app: Application) : BaseViewModel(app){
             val response = requestSignin(request)
             onSigninResponse(response)
         } catch (e: Exception) {
-            error("signin error", e)
+            error("signin error $e")
             Toast("알 수 없는 오류가 발생했습니다.")
         }
     }
 
-    private fun  isNotVaildSignin(request: SigninRequest) =
+    private fun  isNotVaildSignin(request: LoginRequest) =
         when {
             request.isNotVaildEmail() -> {
                 Toast("이메일 형식이 정확하지 않습니다.")
@@ -45,18 +44,18 @@ class SinginViewModel(app: Application) : BaseViewModel(app){
             else -> false
         }
 
-    private suspend fun requestSignin(request: SigninRequest) =
-        withContext(DispatcherState.IO) {
-            DrizzleApi.instanse.signin(request)
+    private suspend fun requestSignin(request: LoginRequest) =
+        withContext(Dispatchers.IO) {
+            DrizzleApi.instance.login(request)
         }
 
-    private fun onSigninResponse(response: ApiResponse<SigninResponse>) {
+    private fun onSigninResponse(response: ApiResponse<LoginResponse>) {
         if(response.success && response.data != null) {
 
             Prefs.token = response.data.token
             Prefs.refreshToken = response.data.refreshToken
             Prefs.userName = response.data.userName
-            Prefs.userId = response.data.userId
+            Prefs.userId = response.data.userId.toString()
 
 
             Toast("로그인되었습니다.") //1

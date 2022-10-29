@@ -9,6 +9,10 @@ plugins {
 android {
     compileSdk 32
 
+    dataBinding{
+        enabled = true
+    }
+
     defaultConfig {
         applicationId "com.example.drizzle_prj"
         minSdk 21
@@ -37,6 +41,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'com.example.drizzle_prj'
 }
 
 dependencies {
