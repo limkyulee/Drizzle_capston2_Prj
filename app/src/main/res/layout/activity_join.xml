@@ -1,160 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".JoinActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <LinearLayout
+    <data>
+        <variable
+            name="user"
+            type="com.example.drizzle_prj.join.JoinViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        tools:context="com.example.drizzle_prj.join.JoinActivity">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/joinActivity"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/login_id"
+            android:clipToOutline="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="28dp"
-                android:layout_marginBottom="10dp"
-                android:text="회원가입"
-                android:textColor="#373737"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="회원가입"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="43dp"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="이름"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/nameText"
+                        android:layout_width="327dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:hint="이름을 입력해주세요."
+                        android:inputType="textPersonName"
+                        android:padding="10dp"
+                        android:textSize="13dp"
+                        />
+<!--                    android:text="@{user.name}"-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="43dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="아이디 (이메일)"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/idText"
+                        android:layout_width="327dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:hint="이메일을 입력해주세요."
+                        android:inputType="textEmailAddress"
+                        android:padding="10dp"
+                        android:textSize="13dp"
+                        />
+<!--                    android:text="@{user.email}"-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="43dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="비밀번호"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/passwordText"
+                        android:layout_width="327dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:hint="비밀번호를 입력해주세요. (숫자, 영문 조합 8~18자)"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textSize="13dp"
+                        />
+                    <!-- android:text="@{user.password}"-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="43dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="비밀번호 확인"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/passwordCheckText"
+                        android:layout_width="327dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:hint="비밀번호를 다시 입력해주세요."
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textSize="13dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/joinButton"
+                android:layout_width="327dp"
+                android:layout_height="47dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="43dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginBottom="45dp"
+                android:background="@drawable/round_button"
+                android:text="드리즐 시작하기"
                 android:textSize="15dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="43dp"
-                android:layout_marginTop="28dp"
-                android:layout_marginBottom="0dp"
-                android:text="이름"
-                android:textColor="#373737"
-                android:textSize="14dp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/nameText"
-                android:layout_width="327dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:hint="이름을 입력해주세요."
-                android:inputType="textPersonName"
-                android:padding="13dp"
-                android:textSize="13dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="43dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="0dp"
-                android:text="아이디 (이메일)"
-                android:textColor="#373737"
-                android:textSize="14dp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/idText"
-                android:layout_width="327dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:hint="이메일을 입력해주세요."
-                android:inputType="textEmailAddress"
-                android:padding="13dp"
-                android:textSize="13dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="43dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="0dp"
-                android:text="비밀번호"
-                android:textColor="#373737"
-                android:textSize="14dp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/passwordText"
-                android:layout_width="327dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:hint="비밀번호를 입력해주세요. (숫자, 영문 조합 8~18자)"
-                android:inputType="textPassword"
-                android:padding="13dp"
-                android:textSize="13dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="43dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="0dp"
-                android:text="비밀번호 확인"
-                android:textColor="#373737"
-                android:textSize="14dp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/passwordCheckText"
-                android:layout_width="327dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="0dp"
-                android:layout_marginBottom="10dp"
-                android:hint="비밀번호를 다시 입력해주세요."
-                android:inputType="textPassword"
-                android:padding="13dp"
-                android:textSize="13dp" />
-
-        </LinearLayout>
-
-        <RadioButton
-            android:id="@+id/radioButton1"
-            android:layout_width="226dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="40dp"
-            android:text="이용약관 동의 (필수)"
-            android:textColor="#373737"
-            android:textSize="11dp" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="226dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="40dp"
-            android:text="개인정보 취급방침 동의 (필수)"
-            android:textColor="#373737"
-            android:textSize="11dp" />
-
-        <Button
-            android:id="@+id/joinButton"
-            android:background="@drawable/round_button"
-            android:layout_width="327dp"
-            android:layout_height="47dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="200dp"
-            android:layout_marginStart="43dp"
-            android:layout_marginEnd="43dp"
-            android:layout_marginBottom="45dp"
-            android:textSize="15dp"
-            android:letterSpacing="0"
-            android:textStyle="bold"
-            android:text="드리즐 시작하기" />
-
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+                />
+<!--            android:onClick="@{()->user.btnClick}"-->
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
