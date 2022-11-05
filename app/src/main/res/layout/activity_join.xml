@@ -161,8 +161,7 @@
                 android:text="드리즐 시작하기"
                 android:textSize="15dp"
                 />
-<!--            android:onClick="@{()->user.join()}"-->
-
+            <!--            android:onClick="@{()->user.join()}"-->
 
         </RelativeLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,4 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".SearchActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStart="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@drawable/searchview_background"
+        app:queryHint="  아이템과 스토어를 검색해보세요."
+        android:layout_marginTop="10dp" />
+    </androidx.appcompat.widget.Toolbar>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
