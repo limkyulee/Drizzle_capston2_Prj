@@ -43,7 +43,8 @@
                         android:layout_marginBottom="10dp"
                         android:text="회원가입"
                         android:textSize="15dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="#373737"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -53,7 +54,8 @@
                         android:layout_marginBottom="0dp"
                         android:text="이름"
                         android:textSize="14dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="#373737"/>
 
                     <EditText
                         android:id="@+id/nameText"
@@ -66,6 +68,7 @@
                         android:inputType="textPersonName"
                         android:padding="10dp"
                         android:textSize="13dp"
+                        android:textColor="#CCCCCC"
                         android:text="@{user.name}"
                         />
 
@@ -78,7 +81,8 @@
                         android:layout_marginBottom="0dp"
                         android:text="아이디 (이메일)"
                         android:textSize="14dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="#373737"/>
 
                     <EditText
                         android:id="@+id/idText"
@@ -91,6 +95,7 @@
                         android:inputType="textEmailAddress"
                         android:padding="10dp"
                         android:textSize="13dp"
+                        android:textColor="#CCCCCC"
                         android:text="@{user.email}"
                         />
 
@@ -103,7 +108,8 @@
                         android:layout_marginBottom="0dp"
                         android:text="비밀번호"
                         android:textSize="14dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="#373737"/>
 
                     <EditText
                         android:id="@+id/passwordText"
@@ -116,6 +122,7 @@
                         android:inputType="textPassword"
                         android:padding="10dp"
                         android:textSize="13dp"
+                        android:textColor="#CCCCCC"
                         android:text="@{user.password}"
                         />
 
@@ -128,7 +135,8 @@
                         android:layout_marginBottom="0dp"
                         android:text="비밀번호 확인"
                         android:textSize="14dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="#373737"/>
 
                     <EditText
                         android:id="@+id/passwordCheckText"
@@ -140,11 +148,30 @@
                         android:hint="비밀번호를 다시 입력해주세요."
                         android:inputType="textPassword"
                         android:padding="10dp"
+                        android:textColor="#CCCCCC"
                         android:textSize="13dp"
                         />
 
                 </LinearLayout>
 
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이용약관 동의 (필수)"
+                    android:textSize="13dp"
+                    android:textColor="#373737"
+                    android:layout_marginLeft="40dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="개인정보 취급방침 동의 (필수)"
+                    android:textSize="13dp"
+                    android:textColor="#373737"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="-15dp"/>
             </LinearLayout>
 
             <Button
