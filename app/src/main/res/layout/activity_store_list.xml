@@ -56,6 +56,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
                 <TextView
+                    android:id="@+id/text1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="18dp"
@@ -63,7 +64,7 @@
                     android:text="지구샵"
                     android:textStyle="bold"
                     android:textColor="#373737"
-                    android:textSize="15dp" />
+                    android:textSize="15dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -100,6 +101,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
                     <TextView
+                        android:id="@+id/text2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="18dp"
@@ -144,6 +146,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
                     <TextView
+                        android:id="@+id/text3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="18dp"
@@ -188,6 +191,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
                     <TextView
+                        android:id="@+id/text4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="18dp"
@@ -232,6 +236,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
                     <TextView
+                        android:id="@+id/text5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="18dp"
@@ -276,6 +281,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
                     <TextView
+                        android:id="@+id/text6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="18dp"
@@ -295,6 +301,51 @@
                 </LinearLayout>
             </LinearLayout>
 
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginTop="42dp"-->
+<!--                    android:text="7"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="17dp"-->
+<!--                    android:textColor="#8F8F8F"/>-->
+<!--                <ImageView-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_marginTop="27dp"-->
+<!--                    android:layout_marginLeft="17dp"-->
+<!--                    android:src="@drawable/list_image_07" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/text7"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="18dp"-->
+<!--                        android:layout_marginTop="40dp"-->
+<!--                        android:text="GRIGO"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textColor="#373737"-->
+<!--                        android:textSize="15dp" />-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="18dp"-->
+<!--                        android:layout_marginTop="1dp"-->
+<!--                        android:text="나와 지구를 지키는 가치있는 습관"-->
+<!--                        android:textColor="#8F8F8F"-->
+<!--                        android:textSize="12dp" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -307,51 +358,8 @@
                     android:text="7"
                     android:textStyle="bold"
                     android:textSize="17dp"
-                    android:textColor="#8F8F8F"/>
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="27dp"
-                    android:layout_marginLeft="17dp"
-                    android:src="@drawable/list_image_07" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginTop="40dp"
-                        android:text="GRIGO"
-                        android:textStyle="bold"
-                        android:textColor="#373737"
-                        android:textSize="15dp" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginTop="1dp"
-                        android:text="나와 지구를 지키는 가치있는 습관"
-                        android:textColor="#8F8F8F"
-                        android:textSize="12dp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="42dp"
-                    android:text="8"
-                    android:textStyle="bold"
-                    android:textSize="17dp"
-                    android:textColor="#8F8F8F"/>
+                    android:textColor="#8F8F8F"
+                    />
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
@@ -364,6 +372,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
                     <TextView
+                        android:id="@+id/text7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="18dp"
@@ -378,138 +387,6 @@
                         android:layout_marginLeft="18dp"
                         android:layout_marginTop="1dp"
                         android:text="친환경 브랜드 편집샵"
-                        android:textColor="#8F8F8F"
-                        android:textSize="12dp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="42dp"
-                    android:text="9"
-                    android:textStyle="bold"
-                    android:textSize="17dp"
-                    android:textColor="#8F8F8F"/>
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="27dp"
-                    android:layout_marginLeft="17dp"
-                    android:src="@drawable/list_image_01" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginTop="40dp"
-                        android:text="scroll_test_01"
-                        android:textStyle="bold"
-                        android:textColor="#373737"
-                        android:textSize="15dp" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginTop="1dp"
-                        android:text="scroll_test_01"
-                        android:textColor="#8F8F8F"
-                        android:textSize="12dp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="42dp"
-                    android:text="10"
-                    android:textStyle="bold"
-                    android:textSize="17dp"
-                    android:textColor="#8F8F8F"/>
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="27dp"
-                    android:layout_marginLeft="17dp"
-                    android:src="@drawable/list_image_02" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginTop="40dp"
-                        android:text="scroll_test_02"
-                        android:textStyle="bold"
-                        android:textColor="#373737"
-                        android:textSize="15dp" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginTop="1dp"
-                        android:text="scroll_test_02"
-                        android:textColor="#8F8F8F"
-                        android:textSize="12dp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="42dp"
-                    android:text="11"
-                    android:textStyle="bold"
-                    android:textSize="17dp"
-                    android:textColor="#8F8F8F"/>
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="27dp"
-                    android:layout_marginLeft="17dp"
-                    android:src="@drawable/list_image_03" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginTop="40dp"
-                        android:text="scroll_test_03"
-                        android:textStyle="bold"
-                        android:textColor="#373737"
-                        android:textSize="15dp" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="18dp"
-                        android:layout_marginTop="1dp"
-                        android:text="scroll_test_03"
                         android:textColor="#8F8F8F"
                         android:textSize="12dp" />
                 </LinearLayout>

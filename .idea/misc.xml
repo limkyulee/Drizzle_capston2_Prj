@@ -20,6 +20,8 @@
         <entry key="..\:/android-sdk/AndroidStudioProject/Drizzle_Prj/app/src/main/res/layout/activity_cart.xml" value="0.18490374873353596" />
         <entry key="..\:/android-sdk/AndroidStudioProject/Drizzle_Prj/app/src/main/res/layout/activity_detailed_page.xml" value="0.14209726443768997" />
         <entry key="..\:/android-sdk/AndroidStudioProject/Drizzle_Prj/app/src/main/res/layout/activity_join.xml" value="0.10126582278481013" />
+        <entry key="..\:/android-sdk/AndroidStudioProject/Drizzle_Prj/app/src/main/res/layout/activity_kitchen_list.xml" value="0.307518115942029" />
+        <entry key="..\:/android-sdk/AndroidStudioProject/Drizzle_Prj/app/src/main/res/layout/activity_life_list.xml" value="0.307518115942029" />
         <entry key="..\:/android-sdk/AndroidStudioProject/Drizzle_Prj/app/src/main/res/layout/activity_like.xml" value="0.18490374873353596" />
         <entry key="..\:/android-sdk/AndroidStudioProject/Drizzle_Prj/app/src/main/res/layout/activity_login.xml" value="0.3183876811594203" />
         <entry key="..\:/android-sdk/AndroidStudioProject/Drizzle_Prj/app/src/main/res/layout/activity_main.xml" value="0.2916666666666667" />
@@ -27,7 +29,7 @@
         <entry key="..\:/android-sdk/AndroidStudioProject/Drizzle_Prj/app/src/main/res/layout/activity_mypage.xml" value="0.14209726443768997" />
         <entry key="..\:/android-sdk/AndroidStudioProject/Drizzle_Prj/app/src/main/res/layout/activity_shampoo_list.xml" value="0.1" />
         <entry key="..\:/android-sdk/AndroidStudioProject/Drizzle_Prj/app/src/main/res/layout/activity_splash.xml" value="0.16666666666666666" />
-        <entry key="..\:/android-sdk/AndroidStudioProject/Drizzle_Prj/app/src/main/res/layout/activity_store_list.xml" value="0.3125" />
+        <entry key="..\:/android-sdk/AndroidStudioProject/Drizzle_Prj/app/src/main/res/layout/activity_store_list.xml" value="0.22" />
         <entry key="..\:/android-sdk/AndroidStudioProject/Drizzle_Prj/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/android-sdk/AndroidStudioProject/Drizzle_Prj/app/src/main/res/layout/fragment_like.xml" value="0.1" />
         <entry key="..\:/android-sdk/AndroidStudioProject/Drizzle_Prj/app/src/main/res/layout/fragment_mypage.xml" value="0.3183876811594203" />
