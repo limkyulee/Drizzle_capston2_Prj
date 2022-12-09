@@ -1,10 +1,13 @@
 package com.example.drizzle_prj
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.drizzle_prj.databinding.FragmentMypageBinding
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,12 +32,23 @@ class MypageFragment : Fragment() {
         }
     }
 
+    private var _binding: FragmentMypageBinding? = null // 바인딩 초기화
+    private val binding get() = _binding!! // 바인딩 선언
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mypage, container, false)
+        _binding = FragmentMypageBinding.inflate(inflater, container, false) // 바인딩 지정
+        //intent에 저장되어 있는 엑티비티 쪽으로 이동한다
+        binding.mypageLikeButton.setOnClickListener {
+            val intent = Intent(context, LikeActivity::class.java)
+            startActivity(intent)
+        }
+        return binding.root
+
     }
 
     companion object {
