@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bathLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bathImg"
+        android:layout_width="375dp"
+        android:layout_height="260dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:id="@+id/bathMkNm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="12dp"
+        android:textColor="#373737"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bathPdNm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="2dp"
+        android:textColor="#373737"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/bathPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="0dp"
+        android:textColor="#373737"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</TableLayout>

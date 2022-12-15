@@ -6,8 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.drizzle_prj.databinding.ActivityMainBinding
+import com.example.drizzle_prj.bath.BathListActivity
 import com.example.drizzle_prj.databinding.FragmentHomeBinding
+import com.example.drizzle_prj.kitchen.KitchenListActivity
+import com.example.drizzle_prj.life.LifeListActivity
+import com.example.drizzle_prj.note.NoteListActivity
+import com.example.drizzle_prj.shampoo.shampooListActivity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

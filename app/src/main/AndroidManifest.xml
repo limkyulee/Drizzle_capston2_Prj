@@ -13,36 +13,35 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Drizzle_Prj">
         <activity
-            android:name=".NoteListActivity"
+            android:name=".note.NoteListActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".shampooListActivity"
+            android:name=".shampoo.shampooListActivity"
             android:exported="true">
-<!--            <s-->
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".LifeListActivity"
+            android:name=".life.LifeListActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".KitchenListActivity"
+            android:name=".kitchen.KitchenListActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".BathListActivity"
+            android:name=".bath.BathListActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -126,10 +125,10 @@
             android:name=".LoginActivity"
             android:exported="true">
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+<!--             <intent-filter>-->
+<!--             <action android:name="android.intent.action.MAIN" />-->
+<!--             <category android:name="android.intent.category.LAUNCHER" />-->
+<!--             </intent-filter>-->
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
