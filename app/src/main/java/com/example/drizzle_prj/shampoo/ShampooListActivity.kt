@@ -1,21 +1,17 @@
-package com.example.drizzle_prj
+package com.example.drizzle_prj.shampoo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.ListView
-import android.widget.ProgressBar
+import com.example.drizzle_prj.R
 import okhttp3.*
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.IOException
 
-//private var ScrollView.shampCustomAdapter: shampCustomAdapter
-//    get() {}
-//    set() {}
 
 class shampooListActivity : AppCompatActivity() {
-    lateinit var progress: ProgressBar
+//    lateinit var progress: ProgressBar
     lateinit var listView_details: ListView
     var arrayList_details:ArrayList<shampooModel> = ArrayList();
     //OkHttpClient creates connection pool between client and server
@@ -24,14 +20,15 @@ class shampooListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shampoo_list)
 
-//        progress = findViewById(R.id.progressBar)
+//        progress = findViewById(R.id.progress)
 //        progress.visibility = View.VISIBLE
+
         listView_details = findViewById<ListView>(R.id.listViewShampoo) as ListView
         run("http://43.201.88.75/shampoolist.php")
     }
 
      fun run(url: String) {
-        progress.visibility = View.VISIBLE
+//        progress.visibility = View.VISIBLE
         val request = Request.Builder()
             .url(url)
             .build()
@@ -54,10 +51,11 @@ class shampooListActivity : AppCompatActivity() {
 
                  for (i in 0.. size-1) {
                      var json_objectdetail:JSONObject=jsonarray_info.getJSONObject(i)
-                     var model:shampooModel = shampooModel()
+                     var model: shampooModel = shampooModel()
                      model.price = json_objectdetail.getString("price")
                      model.pdNm=json_objectdetail.getString("pdNm")
                      model.mkNm=json_objectdetail.getString("mkNm")
+                     model.pdImg=json_objectdetail.getString("pdImg")
                      arrayList_details.add(model)
                  }
                  runOnUiThread {
@@ -66,6 +64,6 @@ class shampooListActivity : AppCompatActivity() {
                      obj_adapter = shampCustomAdapter(applicationContext,arrayList_details)
                      listView_details.adapter = obj_adapter
                  }
-                 progress.visibility = View.GONE
+//                 progress.visibility = View.GONE
              }
          })}}

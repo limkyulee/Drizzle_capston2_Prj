@@ -1,14 +1,14 @@
-package com.example.drizzle_prj
+package com.example.drizzle_prj.shampoo
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.BaseAdapter
-import android.widget.LinearLayout
-import android.widget.TextView
+import android.widget.*
+import com.bumptech.glide.Glide
+import com.example.drizzle_prj.R
 
- class shampCustomAdapter(context: Context, arrayListDetails:ArrayList<shampooModel>):
+class shampCustomAdapter(context: Context, arrayListDetails:ArrayList<shampooModel>):
     BaseAdapter() {
     private val layoutInflater: LayoutInflater
     private val arrayListDetails:ArrayList<shampooModel>
@@ -33,9 +33,9 @@ import android.widget.TextView
         val view: View?
         val listRowHolder: ListRowHolder
         if (convertView == null) {
-            view = this.layoutInflater.inflate(R.layout.activity_shampoo_list, parent, false)
+            view = this.layoutInflater.inflate(R.layout.shampoo_list_layout, parent, false)
             listRowHolder = ListRowHolder(view)
-            view.tag = listRowHolder
+            listRowHolder.also { view.tag = it }
         } else {
             view = convertView
             listRowHolder = view.tag as ListRowHolder
@@ -43,20 +43,19 @@ import android.widget.TextView
         listRowHolder.shampooMkNm.text = arrayListDetails.get(position).mkNm
         listRowHolder.shampooPdNm.text = arrayListDetails.get(position).pdNm
         listRowHolder.shampooPrice.text = arrayListDetails.get(position).price
+         var ShampooimageList = arrayListDetails.get(position).pdImg
+         Glide.with(parent)
+             .load(ShampooimageList)
+             .into(listRowHolder.shampooImg)
         return view
     }
 }
 
-private class ListRowHolder(row: View?) {
-    public val shampooMkNm: TextView
-    public val shampooPdNm: TextView
-    public val shampooPrice: TextView
-    public val shampooLayout: LinearLayout
+class ListRowHolder(row: View?) {
+    public val shampooImg: ImageView = row?.findViewById<View>(R.id.shampooImg) as ImageView
+    public val shampooMkNm: TextView = row?.findViewById<View>(R.id.shampooMkNm) as TextView
+    public val shampooPdNm: TextView = row?.findViewById<View>(R.id.shampooPdNm) as TextView
+    public val shampooPrice: TextView = row?.findViewById<View>(R.id.shampooPrice) as TextView
+    public val shampooLayout: LinearLayout = row?.findViewById<LinearLayout>(R.id.shampooLayout) as TableLayout
 
-    init {
-        this.shampooPrice = row?.findViewById<TextView>(R.id.shampooPrice) as TextView
-        this.shampooMkNm = row?.findViewById<TextView>(R.id.shampooMkNm) as TextView
-        this.shampooPdNm = row?.findViewById<TextView>(R.id.shampooPdNm) as TextView
-        this.shampooLayout = row?.findViewById<LinearLayout>(R.id.shampooLayout) as LinearLayout
-    }
 }

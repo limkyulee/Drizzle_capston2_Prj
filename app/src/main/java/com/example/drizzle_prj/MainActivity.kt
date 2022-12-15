@@ -4,11 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import com.example.drizzle_prj.api.DrizzleApi
 import com.example.drizzle_prj.databinding.ActivityMainBinding
-import com.example.drizzle_prj.databinding.ActivityShampooListBinding
-import kotlinx.coroutines.runBlocking
+import com.example.drizzle_prj.shampoo.shampooListActivity
 
 
 class MainActivity : AppCompatActivity() {
