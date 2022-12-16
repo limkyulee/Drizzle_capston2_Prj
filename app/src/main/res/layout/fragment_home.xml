@@ -62,7 +62,7 @@
                         android:id="@+id/main_shampoo_button"
                         android:layout_width="65dp"
                         android:layout_height="65dp"
-                        android:layout_marginLeft="21.5dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginRight="5.5dp"
                         android:layout_marginTop="15dp"
                         app:srcCompat="@drawable/shampoo_icon" />
@@ -111,7 +111,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="41.5dp"
+                        android:layout_marginLeft="40dp"
                         android:layout_marginTop="5dp"
                         android:text="세정"
                         android:textColor="#373737"
